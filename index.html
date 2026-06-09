@@ -310,7 +310,7 @@ function finish(won,stats){
       `<div class="stat"><div class="stat-n">${stats.max}</div><div class="stat-l">Best</div></div>`+
       `<div class="stat"><div class="stat-n">${stats.perfect||0}</div><div class="stat-l">Perfect</div></div>`;}
   document.getElementById('emoji-grid').innerHTML=history.map(row=>row.map(c=>CEMOJI[c]).join('')).join('<br>');
-  const share=`Football Connections\nPuzzle #${_idx+1}\n${history.map(row=>row.map(c=>CEMOJI[c]).join('')).join('\n')}`;
+  const share=`Football Connections\nPuzzle #${_idx+1}\n${history.map(row=>row.map(c=>CEMOJI[c]).join('')).join('\n')}\n\nfootball-connections.pages.dev`;
   document.getElementById('btn-tw').onclick=()=>window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(share),'_blank','noopener');
   document.getElementById('btn-cp').onclick=()=>copyText(share);
   r.classList.add('show');
