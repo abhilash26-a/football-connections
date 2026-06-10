@@ -192,7 +192,7 @@ function genPuzzle(minCur, forbidden){
 }
 
 // ── 45-day tournament calendar: no theme repeats within the window ───────────
-const WC_START=new Date(2026,5,11), WC_DAYS=45;  // local midnight 11 Jun 2026
+const WC_START=new Date(2026,5,9), WC_DAYS=50;   // calendar runs from launch day (9 Jun 2026) for 50 days
 function buildCalendar(){
   rng=mulberry32(20260611);           // fixed seed → everyone gets the same calendar
   const cal=[]; const usedOrder=[];   // theme ids in the order they were consumed
